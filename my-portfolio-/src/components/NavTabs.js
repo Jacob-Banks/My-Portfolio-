@@ -1,11 +1,11 @@
 import React from "react";
 
 function NavTabs(props) {
-  const tabs = ["Home", "About", "Contact", "Resume"];
+  const tabs = ["Resume", "About", "Portfolio", "Contact"];
   return (
-    <ul className="nav nav-tabs">
+    <ul className="  flex-row nav nav-tabs">
       {tabs.map((tab) => (
-        <li className="nav-item" key={tab}>
+        <li className="nav-item mx-2" key={tab}>
           <a
             href={"#" + tab.toLowerCase()}
             onClick={() => props.handlePageChange(tab)}

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
-import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-
-function Portfolio() {
+import jacob from "../assets/images/jacob.jpg";
+function PortfolioCont() {
   const [currentPage, handlePageChange] = useState("Home");
 
   const renderPage = () => {
@@ -22,13 +22,20 @@ function Portfolio() {
       case "Resume":
         return <Resume />;
       default:
-        return <Home />;
+        return <About />;
     }
   };
 
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <header className="flex-row px-1">
+        <h1> jacob banks</h1>
+        <img src={jacob} alt="jacob with mask" />
+        <NavTabs
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      </header>
       <div>
         {
           // Render the component returned by 'renderPage()'
@@ -41,4 +48,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default PortfolioCont;
