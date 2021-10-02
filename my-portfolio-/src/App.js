@@ -1,11 +1,13 @@
 import React from "react";
 import Footer from "./components/Footer";
-import PortfolioContainer from "./components/PortfolioContainer";
+import Header from "./components/Header";
+
 import "./index.css";
 const App = () => {
   return (
     <div>
-      <PortfolioContainer></PortfolioContainer>
+      <Header />
+
       <Footer></Footer>
     </div>
   );
