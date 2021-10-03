@@ -1,18 +1,16 @@
 import React from "react";
-import phone from "../assets/images/phone.png";
+//import phone from "../assets/images/phone.png";
 
-import whatsApp_Logo_7 from "../assets/images/WhatsApp_Logo_7.png";
+//import whatsApp_Logo_7 from "../assets/images/WhatsApp_Logo_7.png";
 
 import gmail from "../assets/images/gmail.png";
 
 import link from "../assets/images/LI-In-Bug.png";
 
-import gitahub from "../assets/images/GitHub-Mark-120px-plus.png";
+import gitahub from "../assets/images/Octocat.png";
 function Footer() {
   return (
     <footer id="contact">
-      <img src={phone} alt="phone" />
-      <img src={whatsApp_Logo_7} alt="whatsapp" />
       <a href="mailto:kobybanks@gmail.com">
         <img src={gmail} alt="gmail logo" />
       </a>
