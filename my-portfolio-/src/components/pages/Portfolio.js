@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import gitahub from "../../assets/images/Octocat.png";
 
 function Home() {
   const [projects] = useState([
@@ -15,7 +16,7 @@ function Home() {
     {
       name: "Run-Buddy",
       link: "https://jacob-banks.github.io/run-buddy/",
-      gitLink: " ",
+      gitLink: " b",
     },
     {
       name: "What 2 Watch",
@@ -25,7 +26,7 @@ function Home() {
     {
       name: "Learn Your Letters",
       link: "http://harvey.rinalka.com",
-      gitLink: " ",
+      gitLink: " a",
     },
     {
       name: "Weather App",
@@ -37,14 +38,20 @@ function Home() {
   return (
     <div className="flex-row">
       {projects.map((image, i) => (
-        <div className="test" key={image.name}>
+        <div className="test mx-2" key={image.name}>
           <img
             src={require(`../../assets/images/projects/${i}.png`).default}
             alt={image.name}
-            className="project img-thumbnail mx-2 "
+            className="project img-thumbnail "
             key={image.name}
           />
           <span className="name">{image.name}</span>
+          <img
+            src={gitahub}
+            alt="link to git hub"
+            className="project-link"
+            key={image.gitLink}
+          />
         </div>
       ))}
     </div>

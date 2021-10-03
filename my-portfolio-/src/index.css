@@ -171,10 +171,19 @@ input:focus {
   right: 50%;
   background-color: #111111;
 }
+.project-link {
+  display: none;
+  position: absolute;
+  top: 33%;
+  right: 25%;
+  max-height: 55px;
+}
 .test:hover .name {
   display: block;
 }
-
+.test:hover .project-link {
+  display: block;
+}
 li {
   list-style: none;
 }
