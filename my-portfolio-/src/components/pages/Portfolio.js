@@ -37,12 +37,15 @@ function Home() {
   return (
     <div className="flex-row">
       {projects.map((image, i) => (
-        <img
-          src={require(`../../assets/images/projects/${i}.png`).default}
-          alt={image.name}
-          className="img-thumbnail mx-1"
-          key={image.name}
-        />
+        <div className="test" key={image.name}>
+          <img
+            src={require(`../../assets/images/projects/${i}.png`).default}
+            alt={image.name}
+            className="project img-thumbnail mx-2 "
+            key={image.name}
+          />
+          <span className="name">{image.name}</span>
+        </div>
       ))}
     </div>
   );

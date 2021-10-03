@@ -161,6 +161,19 @@ input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
+.test {
+  position: relative;
+}
+.name {
+  display: none;
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #111111;
+}
+.test:hover .name {
+  display: block;
+}
 
 li {
   list-style: none;
@@ -191,6 +204,7 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .space-between {
@@ -253,6 +267,7 @@ textarea {
 
 .img-thumbnail {
   width: auto;
+  max-width: 25vw;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
