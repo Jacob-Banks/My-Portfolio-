@@ -29,9 +29,9 @@ function Header() {
   return (
     <div>
       <div>
-        <header className="flex-row px-1">
-          <h1> jacob banks</h1>
-          <img src={jacob} alt="jacob with mask" />
+        <header className="flex-row px-1 header">
+          <h1> Jacob Banks</h1>
+
           <NavTabs
             currentPage={currentPage}
             handlePageChange={handlePageChange}

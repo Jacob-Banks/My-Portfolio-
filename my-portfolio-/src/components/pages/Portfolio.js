@@ -6,7 +6,7 @@ function Home() {
     {
       name: "Lettuce Plan This Thyme",
       link: "https://polar-mesa-03802.herokuapp.com/signup",
-      gitLink: " ",
+      gitLink: "https://github.com/adamgmcfadden/Lettuce-Plan-This-Thyme ",
     },
     {
       name: "Photos 4 Babi",
@@ -38,20 +38,25 @@ function Home() {
   return (
     <div className="flex-row">
       {projects.map((image, i) => (
-        <div className="test mx-2" key={image.name}>
+        <div className="test mx-2 " key={image.name}>
           <img
             src={require(`../../assets/images/projects/${i}.png`).default}
             alt={image.name}
             className="project img-thumbnail "
             key={image.name}
           />
-          <span className="name">{image.name}</span>
-          <img
-            src={gitahub}
-            alt="link to git hub"
-            className="project-link"
-            key={image.gitLink}
-          />
+          <a href={image.link}>
+            {" "}
+            <span className="name sub py-1 px-1">{image.name}</span>
+          </a>
+          <a href={image.gitLink}>
+            <img
+              src={gitahub}
+              alt="link to git hub"
+              className="project-link sub"
+              key={image.gitLink}
+            />
+          </a>
         </div>
       ))}
     </div>

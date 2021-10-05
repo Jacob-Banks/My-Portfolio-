@@ -102,6 +102,16 @@ header {
   background: var(--dark);
   margin: 15px;
   align-content: center;
+  background-image: url("./assets/images/header.jpg");
+
+  color: #111111;
+  height: 200px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header img {
+  max-height: 100px;
+  width: auto;
 }
 
 header a {
@@ -113,35 +123,6 @@ header a {
 }
 .para {
   margin: 0 5vw;
-}
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-button[disabled] {
-  cursor: default;
-  opacity: 0.8;
-}
-
-header img {
-  max-height: 100px;
-  width: auto;
-}
-
-span[role="img"] {
-  cursor: default;
 }
 
 form {
@@ -164,12 +145,20 @@ input:focus {
 .test {
   position: relative;
 }
+.project {
+  z-index: 1;
+}
+.project:hover {
+  opacity: 0.6;
+}
 .name {
   display: none;
   position: absolute;
   top: 33%;
-  right: 50%;
-  background-color: #111111;
+  left: 30px;
+
+  max-height: 60px;
+  opacity: 0.6;
 }
 .project-link {
   display: none;
@@ -177,12 +166,26 @@ input:focus {
   top: 33%;
   right: 25%;
   max-height: 55px;
+  opacity: 0.6;
 }
 .test:hover .name {
   display: block;
 }
 .test:hover .project-link {
   display: block;
+}
+.test:hover .project {
+  opacity: 0.6;
+}
+
+.project-link:hover {
+  opacity: 0.99;
+}
+.name:hover {
+  opacity: 1;
+}
+.sub:hover .project {
+  opacity: 0.6;
 }
 li {
   list-style: none;
@@ -203,25 +206,10 @@ textarea {
   padding: 5px;
 }
 
-.container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-end {
-  justify-content: flex-end;
 }
 
 .mx-1 {
@@ -269,64 +257,13 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
-}
-
 .img-thumbnail {
-  width: auto;
+  width: 100%;
+  min-width: 500px;
   max-width: 25vw;
-  height: 300px;
-  margin-bottom: 50px;
+  height: auto;
+
   cursor: pointer;
-}
-
-.modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-}
-
-.modalTitle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-button {
-  background: var(--primary);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding: 10px 15px;
-}
-
-a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
 }
 
 .navActive {
