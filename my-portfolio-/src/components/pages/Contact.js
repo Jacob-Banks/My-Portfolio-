@@ -15,8 +15,7 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
-      console.log("Form", formState);
+      console.log("Submit Form", formState);
     }
   };
 
@@ -35,20 +34,15 @@ function ContactForm() {
         setErrorMessage("");
       }
     }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log("Handle Form", formState);
+    }
   };
 
   return (
     <section>
-      <h1 data-testid="h1tag" className="title">
-        Contact me
-      </h1>
-      <h2 data-testid="h2tag">Reach me!</h2>
-      <address>
-        <a href="mailto:kobybanks@gmail.com">kobybanks@gmail.com</a>
-        <br />
-        <a href="tel:+13432026543">(343) 202-6543</a>
-      </address>
-
+      <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

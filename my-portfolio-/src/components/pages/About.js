@@ -1,8 +1,9 @@
 import React from "react";
-
+import jacob from "../../assets/images/jacob.jpg";
 const About = () => (
   <div>
     <h1 className="title">About Me</h1>
+    <img className="jacob" src={jacob} alt="this is me" />
     <p className="para">
       Until the pandemic hit, I was living and working in Prague. I ended out
       there after four unsatisfying frustrating and disappointing years at

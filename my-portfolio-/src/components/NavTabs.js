@@ -2,6 +2,7 @@ import React from "react";
 
 function NavTabs(props) {
   const tabs = ["Resume", "About", "Portfolio", "Contact"];
+
   return (
     <ul className="  flex-row nav nav-tabs">
       {tabs.map((tab) => (
@@ -10,7 +11,7 @@ function NavTabs(props) {
             href={"#" + tab.toLowerCase()}
             onClick={() => props.handlePageChange(tab)}
             className={
-              props.currentPage === tab ? "nav-link active" : "nav-link"
+              props.currentPage === tab ? "nav-link-active" : "nav-link"
             }
           >
             {tab}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
-import jacob from "../assets/images/jacob.jpg";
+
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
