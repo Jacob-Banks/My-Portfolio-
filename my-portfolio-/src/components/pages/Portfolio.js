@@ -47,18 +47,20 @@ function Home() {
               className="project img-thumbnail "
               key={image.name}
             />
-            <a href={image.link}>
-              {" "}
-              <span className="name sub py-1 px-1">{image.name}</span>
-            </a>
-            <a href={image.gitLink}>
-              <img
-                src={gitahub}
-                alt="link to git hub"
-                className="project-link sub"
-                key={image.gitLink}
-              />
-            </a>
+            <div className="sub">
+              <a href={image.link}>
+                {" "}
+                <span className="name  py-1 px-1">{image.name}</span>
+              </a>
+              <a href={image.gitLink}>
+                <img
+                  src={gitahub}
+                  alt="link to git hub"
+                  className="project-link "
+                  key={image.gitLink}
+                />
+              </a>
+            </div>
           </div>
         ))}
       </div>
