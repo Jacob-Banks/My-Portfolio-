@@ -29,7 +29,7 @@ function Header() {
   return (
     <div>
       <div>
-        <header className="flex-row px-1 header">
+        <header className=" header">
           <h1> Jacob Banks</h1>
 
           <NavTabs

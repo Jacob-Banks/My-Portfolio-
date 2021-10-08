@@ -2,14 +2,14 @@ import React from "react";
 
 const Blog = () => (
   <div className="resume">
-    <h1 className="title">Resume </h1>
+    <h2>Resume </h2>
     <p>
       Click to download
       <a href="/logo192.png" download>
         : Resume
       </a>
     </p>
-    <h2>Front-end Profeicencies</h2>
+    <h3>Front-end Profeicencies</h3>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -19,7 +19,7 @@ const Blog = () => (
       <li>React</li>
       <li>Bootstrap</li>
     </ul>
-    <h2>Back-end Profeicencies</h2>
+    <h3>Back-end Profeicencies</h3>
     <ul>
       <li>APIs</li>
       <li>Node</li>

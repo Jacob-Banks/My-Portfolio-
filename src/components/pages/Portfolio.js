@@ -37,7 +37,7 @@ function Home() {
 
   return (
     <div>
-      <h1 className="title">projects</h1>
+      <h1 className="pro-title">projects</h1>
       <div className="flex-row">
         {projects.map((image, i) => (
           <div className="test mx-2 " key={image.name}>
