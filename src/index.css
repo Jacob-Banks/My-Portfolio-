@@ -3,9 +3,10 @@ html {
   margin: 0 auto;
 }
 :root {
-  --light: rgb(193, 172, 143);
-  --dark: rgb(72, 68, 56);
-  --text: black;
+  --yellow: rgb(225, 225, 185);
+  --light: rgb(200, 210, 225);
+  --dark: rgb(47, 53, 70);
+  --darktext: black;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -57,15 +58,17 @@ header {
 
   background-image: url("./assets/images/header.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  color: #111111;
-  height: 400px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
   font-family: Source code pro;
   font-weight: bolder;
+  z-index: 999999;
 }
 h1 {
-  margin-top: 50px;
-  margin-left: 25px;
+  margin: 50px 0 0 25px;
+
+  color: black;
 }
 nav a:hover {
   text-decoration: none;
@@ -75,11 +78,16 @@ nav a:hover {
 }
 .nav-item {
   cursor: pointer;
-  margin: 50px 16px;
+  margin: 0px 16px;
 }
 .nav-link-active {
   color: blue;
   background-color: var(--light);
+  padding: 5px;
+}
+.nav-item .nav-link-active {
+  color: var(--yellow);
+  background-color: var(--dark);
 }
 .title {
   margin: 60px 25px;
@@ -126,6 +134,8 @@ input:focus {
 
 .pro-title {
   text-align: center;
+  margin-bottom: 50px;
+  color: var(--light);
 }
 .test {
   position: relative;
@@ -138,11 +148,12 @@ input:focus {
 .sub {
   display: none;
   position: absolute;
-  top: 20%;
-  left: 5%;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: aliceblue;
   padding-bottom: 28px;
+  text-align: center;
 }
 
 .name {
@@ -166,7 +177,7 @@ input:focus {
 
 .test:hover .project {
   opacity: 0.4;
-  border: 12px solid white;
+  border: 12px solid var(--yellow);
 }
 
 .project-link:hover {
@@ -210,11 +221,6 @@ footer img {
   margin-left: 25px;
 }
 @media only screen and (max-width: 1254px) {
-  header {
-    justify-content: center;
-    background-size: cover;
-  }
-
   .img-thumbnail {
     width: 100%;
     min-width: 550px;
@@ -222,5 +228,15 @@ footer img {
     height: auto;
 
     cursor: pointer;
+  }
+}
+@media only screen and (max-width: 829px) {
+  .nav-link {
+    margin: 0 16px;
+    background-color: var(--light);
+    padding: 5px;
+  }
+  header {
+    justify-content: center;
   }
 }
