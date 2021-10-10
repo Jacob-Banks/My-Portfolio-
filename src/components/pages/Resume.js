@@ -6,7 +6,7 @@ const Blog = () => (
     <p>
       Click to download
       <a href="/logo192.png" download>
-        : Resume
+        <span className="resumeLink">: Resume</span>
       </a>
     </p>
     <h3>Front-end Profeicencies</h3>
