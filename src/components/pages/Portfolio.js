@@ -11,22 +11,22 @@ function Home() {
     {
       name: "Photos 4 Babi",
       link: "http://babi.rinalka.com/",
-      gitLink: " ",
+      gitLink: "https://github.com/Jacob-Banks/Babi-Photo-Site ",
     },
     {
       name: "Run-Buddy",
       link: "https://jacob-banks.github.io/run-buddy/",
-      gitLink: " b",
+      gitLink: "https://github.com/Jacob-Banks/run-buddy",
     },
     {
       name: "What 2 Watch",
       link: "https://jacob-banks.github.io/group-project-1/",
-      gitLink: " ",
+      gitLink: "https://github.com/Jacob-Banks/group-project-1 ",
     },
     {
       name: "Learn Your Letters",
       link: "http://harvey.rinalka.com",
-      gitLink: " a",
+      gitLink: "https://github.com/Jacob-Banks/learn-your-letters",
     },
     {
       name: "Weather App",
