@@ -5,7 +5,7 @@ const Blog = () => (
     <h2>Resume </h2>
     <p>
       Click to download
-      <a href="/logo192.png" download>
+      <a href="/resume-Jacob.pdf" download>
         <span className="resumeLink">: Resume</span>
       </a>
     </p>

@@ -1,7 +1,7 @@
 import React from "react";
 
 function NavTabs(props) {
-  const tabs = ["Resume", "About", "Portfolio", "Contact"];
+  const tabs = ["About", "Portfolio", "Contact", "Resume"];
 
   return (
     <ul className="  flex-row nav nav-tabs">
